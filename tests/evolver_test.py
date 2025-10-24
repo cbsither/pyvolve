@@ -88,8 +88,8 @@ class evolver_seed(unittest.TestCase):
 
     def test_evolver_bad_seed(self):
         
-        self.failUnlessRaises(AssertionError, self.e, seqfile = "seed.fasta", write_anc=True, seed = "string", msg = "Assertion not raised with string random seed.")
-        self.failUnlessRaises(AssertionError, self.e, seqfile = "seed.fasta", write_anc=True, seed = 1.3, msg = "Assertion not raised with float random seed.")
+        self.assertRaises(AssertionError, self.e, seqfile = "seed.fasta", write_anc=True, seed = "string")
+        self.assertRaises(AssertionError, self.e, seqfile = "seed.fasta", write_anc=True, seed = 1.3)
 
 
 
