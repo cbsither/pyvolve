@@ -6,10 +6,11 @@ Pyvolve is an open-source Python module for simulating sequences along a phyloge
 A detailed user manual for Pyvolve is available [here](https://github.com/sjspielman/pyvolve/raw/master/user_manual/pyvolve_manual.pdf), and API documentation for Pyvolve is available at [https://sjspielman.github.io/pyvolve](https://sjspielman.github.io/pyvolve).
 
 Pyvolve has several dependencies:
-* [Biopython](http://biopython.org/wiki/Download)
-* [Scipy and Numpy](http://www.scipy.org/install.html) (with Numpy >= 1.7)
+* [Biopython](http://biopython.org/wiki/Download) (>= 1.80)
+* [Scipy](http://www.scipy.org/install.html) (>= 1.9.0)
+* [Numpy](http://www.scipy.org/install.html) (>= 1.23.0)
 
-Currently, `pyvolve` development is occurring in Python3.x with absolutely no plans to return to Python2. The following examples therefore assume Python3 (which you may have on your computer named as `python3` and not `python`!)
+**Python Version Support:** Pyvolve supports Python 3.8+ including the latest Python 3.13. The following examples assume Python3 (which you may have on your computer named as `python3` and not `python`!)
 
 You can install Pyvolve directly using `pip` or `easy_install` (note that, if needed, these lines will install any missing dependencies for you!):
 ```bash

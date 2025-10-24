@@ -24,17 +24,31 @@ To install for a particular user (locally), enter -
 _VERSION="1.1.0"
 
 from setuptools import setup
-setup(name = 'Pyvolve', 
-    version = _VERSION, 
+setup(name = 'Pyvolve',
+    version = _VERSION,
     description = 'Sequence simulation along phylogenies according to continuous-time Markov models',
-    author = 'Stephanie J. Spielman', 
-    author_email = 'spielman@rowan.edu', 
+    author = 'Stephanie J. Spielman',
+    author_email = 'spielman@rowan.edu',
     url = 'https://github.com/sjspielman/pyvolve',
     download_url = 'https://github.com/sjspielman/pyvolve/tarball/' + _VERSION,
     platforms = 'Tested on Mac OS X.',
     package_dir = {'pyvolve':'src'},
     packages = ['pyvolve', 'tests'],
     package_data = {'tests': ['freqFiles/*', 'evolFiles/*']},
-    install_requires=['numpy>=1.20.0', 'scipy', 'Biopython'],
+    python_requires='>=3.8',
+    install_requires=['numpy>=1.23.0', 'scipy>=1.9.0', 'biopython>=1.80'],
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Topic :: Scientific/Engineering :: Bio-Informatics',
+    ],
     test_suite = "tests"
 )

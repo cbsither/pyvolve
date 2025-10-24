@@ -1,14 +1,52 @@
+# OS
 **/.DS_Store
+.DS_Store
+
+# Python
 **/*.pyc
+**/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/**
+dist/**
+*.egg-info/
+pyvolve.egg-info/**
+**/.eggs/*
+.eggs/
+*.egg
+.Python
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+**/*.idraw
+
+# LaTeX
 **/*.bbl
-**/*.log
 **/*.blg
 **/*.aux
 **/*.out
 **/*.toc
 **/*.synctex.gz
-build/**
-dist/**
-pyvolve.egg-info/**
-**/*.idraw
-**/.eggs/*
+**/*.log
+
+# Generated files
+custom_matrix_frequencies.txt
+*.fasta
+*.phy
+seed.fasta
